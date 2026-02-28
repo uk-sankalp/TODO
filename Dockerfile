@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Copy everything
 COPY . .
-
+RUN chmod +x mvnw
 # Build the application
 RUN ./mvnw clean package -DskipTests
 
